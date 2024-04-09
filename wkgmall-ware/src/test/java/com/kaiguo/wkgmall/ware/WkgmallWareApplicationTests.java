@@ -1,4 +1,4 @@
-package com.kaiguo.wkgmallware;
+package com.kaiguo.wkgmall.ware;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
