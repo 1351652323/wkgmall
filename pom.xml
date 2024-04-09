@@ -20,5 +20,8 @@
         <module>wkgmall-member</module>
         <module>wkgmall-order</module>
         <module>wkgmall-product</module>
+        <module>renren-fast</module>
+        <module>renren-generator</module>
+        <module>wkgmall-common</module>
     </modules>
 </project>
