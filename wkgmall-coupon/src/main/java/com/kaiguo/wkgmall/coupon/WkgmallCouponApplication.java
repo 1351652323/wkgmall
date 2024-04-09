@@ -1,7 +1,8 @@
-package com.kaiguo.wkgmallcoupon;
+package com.kaiguo.wkgmall.coupon;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.GetMapping;
 
 @SpringBootApplication
 public class WkgmallCouponApplication {
@@ -9,5 +10,4 @@ public class WkgmallCouponApplication {
     public static void main(String[] args) {
         SpringApplication.run(WkgmallCouponApplication.class, args);
     }
-
 }
