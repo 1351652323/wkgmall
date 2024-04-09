@@ -1,4 +1,4 @@
-package com.kaiguo.wkgmallmember;
+package com.kaiguo.wkgmall.member;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
