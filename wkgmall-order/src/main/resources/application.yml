@@ -1,4 +1,12 @@
 spring:
+  application:
+    name: wkgmall-order
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        username: nacos
+        password: nacos
   datasource:
     username: root
     password: root
@@ -9,3 +17,5 @@ mybatis-plus:
     db-config:
       id-type: auto
   mapper-locations: classpath:/mapper/order/*.xml
+server:
+  port: 10002

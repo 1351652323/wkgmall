@@ -1,11 +1,21 @@
 spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        username: nacos
+        password: nacos
   datasource:
     username: root
     password: root
     url: jdbc:mysql://localhost:3306/wkgmall_sms?serverTimezone=UTC
     driver-class-name: com.mysql.cj.jdbc.Driver
+  application:
+    name: wkgmall-coupon
 mybatis-plus:
   global-config:
     db-config:
       id-type: auto
   mapper-locations: classpath:/mapper/**/*.xml
+server:
+  port: 10004
