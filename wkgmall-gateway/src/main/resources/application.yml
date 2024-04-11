@@ -46,6 +46,13 @@ spring:
           filters:
             - RewritePath=/api/(?<segment>.*),/$\{segment}
 
+        - id: thirdparty_route
+          uri: lb://wkgmall-third-party
+          predicates:
+            - Path=/api/thirdparty/**
+          filters:
+            - RewritePath=/api/(?<segment>.*),/$\{segment}
+
         - id: renren-fast_route
           uri: lb://renren-fast
           predicates:
@@ -53,9 +60,3 @@ spring:
           filters:
             - RewritePath=/api/(?<segment>.*),/renren-fast/$\{segment}
 
-        - id: wkgmall-third-party_route
-          uri: lb://wkgmall-third-party
-          predicates:
-            - Path=/api/thirdparty/**
-          filters:
-            - RewritePath=/api/(?<segment>.*),/$\{segment}
